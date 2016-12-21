@@ -1,0 +1,31 @@
+{
+  "name": "equipator.js",
+  "version": "0.0.0",
+  "description": "Build the fairest team based on each player score",
+  "main": "index.js",
+  "homepage": "https://github.com/jfresco/equipator.js",
+  "repository": "https://github.com/jfresco/equipator.js",
+  "bugs": "https://github.com/jfresco/equipator.js/issues",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha"
+  },
+  "keywords": ["soccer", "football", "fulbo", "futbol", "team"],
+  "author": "José Fresco <josemariafresco@gmail.com>",
+  "contributors": [],
+  "license": "MIT",
+  "engines": {
+    "node": ">=6"
+  },
+  "dependencies": {
+    "js-combinatorics": "^0.5.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.12.2",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.3.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "mocha": "^3.2.0"
+  }
+}
