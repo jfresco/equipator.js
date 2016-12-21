@@ -1,5 +1,5 @@
 {
-  "name": "equipator.js",
+  "name": "equipator",
   "version": "0.0.0",
   "description": "Build the fairest team based on each player score",
   "main": "index.js",
