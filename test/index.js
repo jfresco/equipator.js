@@ -58,4 +58,24 @@ describe('Best combination', () => {
     assert.equal(team2.players.filter(({ gk }) => gk).length, 1)
     done()
   })
+
+  it('fails if I provide 9 players', done => {
+    try {
+      getBestCombinations(players.slice(0, 9))
+      assert.fail()
+    } catch (e) {
+      assert(e)
+    }
+    done()
+  })
+
+  it('fails if I provide 11 players', done => {
+    try {
+      getBestCombinations(players.slice(0, 11))
+      assert.fail()
+    } catch (e) {
+      assert(e)
+    }
+    done()
+  })
 })

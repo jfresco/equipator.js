@@ -1,7 +1,16 @@
 const { combination } = require('js-combinatorics')
 const { notIn, score, hasGK } = require('./helpers')
 
-module.exports.getBestCombinations = (players, teamSize = 5) => combination(players, teamSize)
+const isValid = (players, teamSize) => {
+  if (players.length !== teamSize * 2) {
+    throw new Error(`You must provide ${teamSize * 2} players`)
+  }
+
+  return true
+}
+
+module.exports.getBestCombinations = (players, teamSize = 5) => isValid(players, teamSize) &&
+  combination(players, teamSize)
   .toArray()
   .map(players1 => ({
     players1,
